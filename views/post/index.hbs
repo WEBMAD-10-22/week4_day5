@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<h2>{{description}}</h2>
+
+<p>Author: {{user.username}}</p>
+
+<form action="/comment/{{_id}}" method="post">
+  <label for="">Title</label>
+  <input type="text" name="title">
+  <label for="">User ID</label>
+  <input type="text" name="user">
+
+  <button type="submit">Enviar Comments</button>
+</form>
+
+{{#each comments}}
+
+  <p>Title: {{title}}</p>
+
+  <p>Author: {{user.username}}</p>
+{{/each}}

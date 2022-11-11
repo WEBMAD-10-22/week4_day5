@@ -1,0 +1,6 @@
+{{#each users }}
+  <p>Username: {{username}}</p>
+  <a href="/auth/user/{{_id}}">View</a>
+  <a href="/auth/user/{{_id}}/edit">Edit</a>
+  <a href="/auth/user/{{_id}}/delete">Delete</a>
+{{/each}}
